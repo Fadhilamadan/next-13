@@ -1,23 +1,19 @@
 import { ReactNode } from "react";
+import Link from "next/link";
 
 export default function Layout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <head>
-        <title>Next.js</title>
+        <title>Next 13</title>
       </head>
 
       <body>
-        <div
-          style={{
-            width: "100%",
-            height: "25vh",
-            backgroundColor: "red",
-            textAlign: "center",
-            fontSize: "2rem",
-          }}
-        >
-          From layout
+        <div style={{ textAlign: "center", display: "grid", gridGap: 10 }}>
+          <Link href="/client">Client</Link>
+          <Link href="/server">Server</Link>
+          <Link href="/mixmatch">Mix Match</Link>
+          <Link href="/degenerate">Degenerate</Link>
         </div>
         <div>{children}</div>
       </body>
