@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import moment from "moment";
 
 export default function Client() {
   console.log(
@@ -14,6 +15,7 @@ export default function Client() {
   return (
     <div>
       <h1>Client Page</h1>
+      <p>Time: {moment().format()}</p>
       {/* Uncommenting this will result in an error complaining about inconsistent rendering between client and server, which is very true */}
       {/* <p>My secret env: {process.env.SECRET_KEY}</p> */}
     </div>
