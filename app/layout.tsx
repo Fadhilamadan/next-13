@@ -1,6 +1,8 @@
 import { ReactNode } from "react";
 import Link from "next/link";
 
+import Providers from "./providers";
+
 export default function Layout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
@@ -15,7 +17,7 @@ export default function Layout({ children }: { children: ReactNode }) {
           <Link href="/mixmatch">Mix Match</Link>
           <Link href="/degenerate">Degenerate</Link>
         </div>
-        <div>{children}</div>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
