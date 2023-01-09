@@ -1,3 +1,9 @@
+import Movies from "./movies";
+
 export default function Page() {
-  return <h1>Hello, Next.js!</h1>;
+  return (
+    <>
+      <Movies />
+    </>
+  );
 }
